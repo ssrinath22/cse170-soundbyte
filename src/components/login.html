@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 20px auto;
+    }
+    input {
+        margin-bottom: 10px;
+    }
+</style>
+<button onClick=home()>RETURN BACK TO MAIN PAGE</button>
+    <center>
+    <div class="container">
+        <br>
+        DEMO LOGIN PAGE : JUST HERE FOR SUBMISSION PURPOSES
+        <form>
+            <input name="username" placeholder="enter your email or username here" value="user">
+            <input name="password" placeholder="enter your password here" value="password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    </center>   
+
+    <script>
+        function home(){
+            window.location.href = "/";
+            console.log("home");
+        }
+    </script>

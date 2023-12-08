@@ -1,0 +1,25 @@
+.tag {
+    background-color: var(--primary-color);
+    padding: 5px 10px;
+    border: 1.5px solid black;
+    border-radius: 20px;
+    width:fit-content;
+    margin: 0 2px;
+    font-size: small;
+    color: var(--font-color);
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+.tag:hover {
+    transform: translateY(-2px);
+}
+
+.tag-link {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 412px) {
+    .tag {
+        margin-bottom: 5px;
+    }
+}

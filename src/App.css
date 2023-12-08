@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+ /* Global CSS */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+ * {
+    font-family: 'Montserrat', sans-serif;
+ }
+
+
+ .main {
+    margin: 20px;
+ }
+
+.header {
+    display: flex;
+} 
+
+.logo-pic {
+    margin-left: 16px;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .text-1 {
+    margin: 0 10px;
+ }
+ .tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 16px;
+ }
+
+ .posts {
+    justify-content: left;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ @media screen and (max-width: 412px) {
+    .posts {
+        justify-content: center;
+    }
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.load {
+    display: flex;
+    justify-content: center;
+    margin: 20px;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.load-button {
+    font-size: 20px;
+    color: white;
+    background-color:grey;
+    border-radius: 20px;
+    border-style: none;
+    padding: 5px 10px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.load-button:hover {
+    transform: translateY(-2px);
 }
